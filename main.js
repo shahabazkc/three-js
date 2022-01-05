@@ -65,20 +65,20 @@ Array(200).fill().forEach(addStar)
 
 
 // adding imag to the background
-const spaceTexture =new THREE.TextureLoader().load('./pexels-johannes-plenio-1103970.jpg')
+const spaceTexture =new THREE.TextureLoader().load('/pexels-johannes-plenio-1103970.jpg')
 scene.background=spaceTexture;
 
 
 
-const jeffTexture = new THREE.TextureLoader().load('./fk.png');
+const jeffTexture = new THREE.TextureLoader().load('/fk.png');
 
 const jeff = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: jeffTexture }));
 
 scene.add(jeff);
 
 // picture ai
-const moonTexture = new THREE.TextureLoader().load('./ai.jpg');
-const normalTexture = new THREE.TextureLoader().load('./fk.png');
+const moonTexture = new THREE.TextureLoader().load('/ai.jpg');
+const normalTexture = new THREE.TextureLoader().load('/fk.png');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
